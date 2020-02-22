@@ -1,0 +1,42 @@
+@media (max-width: 991px) {
+    .promo {
+        &__header {
+            font-size: 38px;
+        }
+        &__subheader {
+            font-size: 18px;
+            font-weight: 300;
+        }
+        &__icons {
+            width: 400px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .button {
+        &__main {
+            width: 270px;
+            height: 45px;
+            font-size: 14px;
+        }  
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        &__official {
+            margin: 0 40px 25px 40px;
+        }
+        &__contacts {
+            align-items: center;
+        }
+        &__phone {
+            margin-bottom: 8px;
+        }
+    }
+    
+    
+}
