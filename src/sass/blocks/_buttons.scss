@@ -8,6 +8,7 @@
     font-weight: 500;
     color: #ffffff;
     text-transform: uppercase;
+    transition: 0.5s all;
     &_main {
         margin-top: 67px;
         width: 300px;
@@ -24,5 +25,11 @@
         width: 131px;
         height: 40px;
         font-size: 14px;
+    }
+    &:hover {
+        background-color: #ffffff;
+        color: $main-color;
+        transform: translate(0, 10%);
+        box-shadow: 3px 3px 20px $main-color;
     }
 }

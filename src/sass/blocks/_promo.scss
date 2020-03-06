@@ -47,10 +47,15 @@
         font-weight: 500;
         color: #ffffff;
         margin-top: 18px;
+        transition: 0.5s all;
         a {
             color: #ffffff;
             text-decoration: underline;
             text-transform: uppercase;
+            transition: 0.5s all;
+            &:hover {
+                color: $main-color;
+            }
         }
     }
 } 

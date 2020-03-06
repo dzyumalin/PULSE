@@ -27,6 +27,10 @@
         a {
             color: $main-color;
             text-decoration: underline;
+            transition: 0.5s all;
+            &:hover {
+                color: #0d0d0d;
+            }
         }
     }
 

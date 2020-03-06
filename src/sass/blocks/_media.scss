@@ -14,6 +14,36 @@
             font-size: 14px;
         }  
     }
+    .carousel {
+        .slick-dots {
+            position: absolute;
+            width: 100%;
+            top: 98%;
+            padding: 0;
+            text-align: center;
+            list-style-type: none;
+            li {
+                position: relative;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0 5px;
+                padding: 0;
+                cursor: pointer;
+                button {
+                    font-size: 0;
+                    background-color: #fff;
+                    border: none;
+                    margin: 0 5px;
+                    &:before {
+                        content: '•';
+                        font-size: 40px;
+                        color: #d0d0d0;
+                    }
+                }
+            }    
+        }
+    }
 }
 @media (max-width: 768px) {
     .header {
@@ -55,10 +85,8 @@
            font-size: 12px;
        }
     }
-    .advantages {
-        .title {
-            font-size: 28px;
-        }
+    .title {
+        font-size: 28px;
     }
     .consultation {
         display: flex;
@@ -66,6 +94,19 @@
             &_left {
                 font-size: 34px;
             }
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+        &-item {
+            margin: 0 10px 20px 10px;
+        }
+    }
+    .feed {
+        &__img {
+            margin-left: 5px;
         }
     }
 }
@@ -85,10 +126,10 @@
             width: 100%;
         }
     }
+    .title {
+        font-size: 24px;
+    }
     .advantages {
-        .title {
-            font-size: 24px;
-        }
         &__wrapper {
             flex-direction: column;
             align-items: center;
@@ -111,6 +152,27 @@
             margin-top: 30px;
             font-size: 15px;
             text-align: center;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 170px;
+        }
+    }
+    .feed {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 50px;
         }
     }
 }
@@ -141,9 +203,32 @@
             width: 100%;
         }
     }
+    .title {
+        font-size: 20px;
+    }
     .consultation {
         .hidden-320 {
             display: none;
         }
+        .title {
+            font-size: 24px;
+        }
     }
-}  
+    .carousel {
+        .slick-dots {
+            li {
+                button {
+                    &:before {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }    
+    }
+    .catalog {
+        &__tab {
+            width: 90px;
+            font-size: 10px;
+        }
+    }
+}
