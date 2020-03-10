@@ -86,4 +86,7 @@ function validateForms(form){
     validateForms('#consultation form');
     validateForms('#order form');
 
+    // Masked input
+
+    $("input[name=phone]").mask("+7 (999) 999-99-99");
 });
