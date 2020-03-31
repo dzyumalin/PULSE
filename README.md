@@ -1,2 +1,2 @@
 # PULSE
-https://safe2k19.github.io/
+https://safe2k19.github.io/dist
